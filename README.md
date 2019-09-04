@@ -10,8 +10,11 @@ Analyzes and plots accelerometer data from science journal recording
 
 ### Dependencies
 
-* pandas
-* numpy
+* numpy==1.17.1
+* pandas==0.25.1
+* python-dateutil==2.8.0
+* pytz==2019.2
+* six==1.12.0
 
 ### Installing
 
