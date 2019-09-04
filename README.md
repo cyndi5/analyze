@@ -6,7 +6,7 @@ science Journal Recording plotter
 
 Analyzes and plots accelerometer data from science journal recording
 
-![Screenshot]("https://github.com/cyndi5/analyze/blob/master/plotly-dash-plot.png")
+![Screenshot](plotly-dash-plot.png)
 
 ## Getting Started
 
