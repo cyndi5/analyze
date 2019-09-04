@@ -14,7 +14,9 @@ Analyzes and plots accelerometer data from science journal recording
 * pandas==0.25.1
 * python-dateutil==2.8.0
 * pytz==2019.2
+* scipy==1.3.1
 * six==1.12.0
+
 
 ### Installing
 
