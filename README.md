@@ -37,17 +37,18 @@ Analyzes and plots accelerometer data from science journal recording
 
 ### Installing
 
-* Enter the following commands in the cloned directory:
+* Change to the project directory, the one you cloned. For example, `cd analyze`. 
+* Enter the following commands after the `$` prompts :
 ```
-$ python3 -m venv venv
-$ pip install -r requirements.txt
-python analyze.py --file ../analyze/data/Driving\ -\ Recording\ 1.csv
+Cyndis-MacBook-Pro:analyze cyndi$ python3 -m venv env
+Cyndis-MacBook-Pro:analyze cyndi$ source env/bin/activate
+(env) Cyndis-MacBook-Pro:analyze cyndi$ pip install -r requirements.txt 
 ```
 ### Executing program
 
-* Enter the following commands in the cloned directory:
+* Enter the following command in the project directory:
 ```
-$ python analyze.py --file data/Driving\ -\ Recording\ 1.csv
+(env) Cyndis-MacBook-Pro:analyze cyndi$ python analyze.py --file data/Driving\ -\ Recording\ 1.csv
 ```
 Note: any CSV file produced by Google Science Journal when exporting Three-Axis Accelerometer data may be used. The device's
  Y-axis is assumed to be aligned with the vehicle longitudinally. Of course, a little math or using the linear 
