@@ -6,9 +6,16 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 
-accelerometer_df = pd.read_csv("data/Driving - Recording 1.csv")
+import argparse
+
+parser = argparse.ArgumentParser(description='Uses Plotly Dash core to plot a CSV from Google Science Journal accelerometer readings.')
+parser.add_argument("--file", required=True, default=None, type=str, help="path to CSV")
+
+args = parser.parse_args()
+
+accelerometer_df = pd.read_csv(args.file)
 print(accelerometer_df.head(5))
-AccY = accelerometer_df.AccY - mean(accelerometer_df.AccY)
+AccY = accelerometer_df.AccY - np.mean(accelerometer_df.AccY)
 timestamp = np.subtract(accelerometer_df.timestamp, accelerometer_df.timestamp[0]) / 1000.0
 vel = (integrate.cumtrapz(AccY, timestamp) * 3600 / 1000).clip(0)
 print(vel)
