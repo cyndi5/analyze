@@ -82,8 +82,6 @@ Charles Cavanaugh Ph.D. (Cynthia)
 
 ## License
 
-MIT License
-
 ## Acknowledgments
 
 * Inspired by Plotly dash core sample code. 
